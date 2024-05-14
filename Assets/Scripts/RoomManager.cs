@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class RoomManager : MonoBehaviour
@@ -57,13 +58,15 @@ public class RoomManager : MonoBehaviour
         }
     }
 
-
-
-    public void ChangeRoom(RoomSO newroom)
+    public List<string> GetItemDescription()
     {
-        currentRoom = newroom;
-        GameManager.Instance.DisplayRoomText();
+        SetItemsInRoom();
+        return itemDescriptionsInRoom;
     }
+
+
+
+   
 
     public void TryToChangeRoom(string direction)
     {
@@ -82,7 +85,7 @@ public class RoomManager : MonoBehaviour
     public string TryToExamineItem(string item)
     {
 
-        if (examineDictionary.Equals(item))
+        if (examineDictionary.ContainsKey(item))
         {
             return examineDictionary[item];
         }
@@ -92,6 +95,13 @@ public class RoomManager : MonoBehaviour
     public void ClearExits()
     {
         exitsDictionary.Clear();
+    }
+    public void ClearItems()
+    {
+        itemsInRoom.Clear();
+        itemDescriptionsInRoom.Clear();
+        examineDictionary.Clear();
+        //takedirectory == clear
     }
 
     public ItemSO GetItemInRoomFromName(string itemName)
@@ -109,5 +119,29 @@ public class RoomManager : MonoBehaviour
         return null;
 
     }
-    
+
+    private ItemSO GetUsableItemFromName(string itemName)
+    {
+        foreach (ItemSO item in usableItems)
+        {
+            if (itemName.Equals(item.itemName))
+            {
+                return item;
+            }
+        }
+        return null;
+    }
+
+    private void RemoveItemInRoom(ItemSO item)
+    {
+        itemsInRoom.Remove(item);
+    }
+
+    public void ChangeRoom(RoomSO newroom)
+    {
+        currentRoom = newroom;
+
+        GameManager.Instance.DisplayRoomText();
+    }
+
 }

@@ -38,10 +38,11 @@ public class GameManager : MonoBehaviour
     public void DisplayRoomText()
     {
         ClearAllCollections();
+        
 
         string roomDescription = RoomManager.Instance.currentRoom.description + New_Line;
         string exitDescription = string.Join(New_Line, RoomManager.Instance.GetExitDescriptionInRoom());
-        //string itemDescription;
+        string itemDescription = string.Join(New_Line, RoomManager.Instance.GetItemDescription());
 
         string fullText = New_Line + roomDescription + New_Line + exitDescription;
         UpdateLogList(fullText);
@@ -57,6 +58,7 @@ public class GameManager : MonoBehaviour
     public void ClearAllCollections()
     {
         RoomManager.Instance.ClearExits();
+        RoomManager.Instance.ClearItems();
     }
 
     private void DisplayText()

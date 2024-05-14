@@ -7,7 +7,7 @@ public class ExamineSO : InputActionSO
 {
     public override void RespondToInput(string[] separatedInput)
     {
-        string response = RoomManager.Instance.TryToExamineItem(separatedInput[1]);
+        string response = RoomManager.Instance.TryToExamineItem(separatedInput[1] + " " + separatedInput[2]);
         GameManager.Instance.UpdateLogList(response);
     }
 }

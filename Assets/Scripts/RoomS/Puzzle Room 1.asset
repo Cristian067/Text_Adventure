@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: Puzzle Room 1
   m_EditorClassIdentifier: 
   roomName: puzzle room 1
-  description: In this room you see a two levels, the right one just its in the wall,
+  description: In this room you see a two levels, the left one just its in the wall,
     simple enought. The other one its marked with arrow in paint, making it for anyone
     who passed wants to pull it down
   exits: []
   items:
   - {fileID: 11400000, guid: 230500592db5d144f9fd82abdfa220b1, type: 2}
+  - {fileID: 11400000, guid: 6aa40fb33372e3240a2f2ad2050a2b48, type: 2}
