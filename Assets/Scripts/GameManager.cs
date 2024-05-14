@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     private List<string> logList = new List<string>();
 
     [SerializeField] private TextMeshProUGUI displayText;
+    [SerializeField] private InputActionSO[] inputActionsArray;
 
 
     private void Awake()
@@ -28,10 +29,21 @@ public class GameManager : MonoBehaviour
         {
             DisplayRoomText();
         }
-
-    private void DisplayRoomText()
+    
+    public InputActionSO[] GetInputActions()
     {
-        string fullText = RoomManager.Instance.currentRoom.description + New_Line;
+        return inputActionsArray;
+    }
+
+    public void DisplayRoomText()
+    {
+        ClearAllCollections();
+
+        string roomDescription = RoomManager.Instance.currentRoom.description + New_Line;
+        string exitDescription = string.Join(New_Line, RoomManager.Instance.GetExitDescriptionInRoom());
+        //string itemDescription;
+
+        string fullText = New_Line + roomDescription + New_Line + exitDescription;
         UpdateLogList(fullText);
     }
 
@@ -42,17 +54,14 @@ public class GameManager : MonoBehaviour
 
     }
 
+    public void ClearAllCollections()
+    {
+        RoomManager.Instance.ClearExits();
+    }
+
     private void DisplayText()
     {
         displayText.text = string.Join(New_Line, logList.ToArray());
     }
 
-    // Start is called before the first frame update
-    
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

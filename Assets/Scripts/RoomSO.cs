@@ -8,7 +8,9 @@ using UnityEngine;
 public class RoomSO : ScriptableObject
 
 {
-    public string name;
+    public string roomName;
     [TextArea] public string description;
+    public Exit[] exits;
+    public ItemSO[] items;
 
 }

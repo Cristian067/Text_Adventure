@@ -10,13 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2c454d80be012f14080e78ebbc03590b, type: 3}
-  m_Name: Start Room
+  m_Name: Puzzle Room 1
   m_EditorClassIdentifier: 
-  roomName: start room
-  description: You found yourself in the ground where its appears to be a structure
-    inside the ground.
-  exits:
-  - direction: north
-    description: There is a door opened to the north
-    room: {fileID: 11400000, guid: a4c6706921588854d989c9b234d70198, type: 2}
-  items: []
+  roomName: puzzle room 1
+  description: In this room you see a two levels, the right one just its in the wall,
+    simple enought. The other one its marked with arrow in paint, making it for anyone
+    who passed wants to pull it down
+  exits: []
+  items:
+  - {fileID: 11400000, guid: 230500592db5d144f9fd82abdfa220b1, type: 2}
