@@ -15,6 +15,8 @@ public class RoomManager : MonoBehaviour
 
     private Dictionary<string, RoomSO> exitsDictionary = new Dictionary<string, RoomSO>();
     private Dictionary<string, string> examineDictionary = new Dictionary<string, string>();
+    private Dictionary<string, string> takeDictionary = new Dictionary<string, string>();
+    private Dictionary<string, ActionResponseSO> useDictionary = new Dictionary<string, ActionResponseSO>();
 
 
     private void Awake()
@@ -90,6 +92,17 @@ public class RoomManager : MonoBehaviour
             return examineDictionary[item];
         }
         return $"you can't examine {item}";
+    }
+
+    public string TryToTakeItem(string item)
+    {
+        if (!takeDictionary.ContainsKey(item))
+        {
+            RemoveItemInRoom(GetItemInRoomFromName(item));
+            Inventory.Instance.AddItemToInventory(item);
+            
+        }
+        return null;
     }
 
     public void ClearExits()
