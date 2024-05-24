@@ -52,7 +52,7 @@ public class RoomManager : MonoBehaviour
             }
             foreach (Interaction interaction in item.interactions)
             {
-                if (interaction.inputAction.keyword.Equals("examine"))
+                if (interaction.inputAction.keyword.Equals("examinar"))
                 {
                     examineDictionary.Add(item.itemName, interaction.responseDescription);
                 }
@@ -74,12 +74,12 @@ public class RoomManager : MonoBehaviour
     {
         if (exitsDictionary.TryGetValue(direction, out var room))
         {
-            GameManager.Instance.UpdateLogList($"You go to the {direction}");
+            GameManager.Instance.UpdateLogList($"Vas hacia {direction}");
             ChangeRoom(room);
         }
         else
         {
-            GameManager.Instance.UpdateLogList($"There isn't nothing in {direction}");
+            GameManager.Instance.UpdateLogList($"No hay nada en {direction}");
         }
 
     }
@@ -91,7 +91,7 @@ public class RoomManager : MonoBehaviour
         {
             return examineDictionary[item];
         }
-        return $"you can't examine {item}";
+        return $"No puedes examinar {item}";
     }
 
     public string TryToTakeItem(string item)

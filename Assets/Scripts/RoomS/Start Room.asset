@@ -13,10 +13,14 @@ MonoBehaviour:
   m_Name: Start Room
   m_EditorClassIdentifier: 
   roomName: start room
-  description: You found yourself in the ground where its appears to be a structure
+  description: 'You found yourself in the ground where its appears to be a structure
     inside the ground.
+
+    Te encuentras a ti mismo tirado en el suelo, donde parece
+    que has caido en una estructura antigua'
   exits:
-  - direction: north
-    description: There is a door opened to the north
+  - direction: norte
+    description: There is a door opened to the north. Hay un arco (de puerta) en
+      el norte
     room: {fileID: 11400000, guid: a4c6706921588854d989c9b234d70198, type: 2}
   items: []

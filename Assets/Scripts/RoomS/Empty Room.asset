@@ -13,13 +13,19 @@ MonoBehaviour:
   m_Name: Empty Room
   m_EditorClassIdentifier: 
   roomName: empty room
-  description: Here are nothing else than black, except a bit of light
+  description: 'Here are nothing else than black, except a bit of light.
+
+
+    Aqui
+    no hay nada mas que oscuridad, excepto una nitida luz en medio de la habitacion'
   exits:
-  - direction: north
+  - direction: norte
     description: You see another open door ahead (north), looks like inside its more
-      brighter than here
+      brighter than here. Ves otro arco mas adelante (norte), parece que a traves
+      de eso hay mas luz que aqui
     room: {fileID: 11400000, guid: 5366e26d58c7252438bb643cc78947b7, type: 2}
-  - direction: back
-    description: Go back isn't a option, right? i mean, if you want you can go back
+  - direction: atras
+    description: Go back isn't a option, right? i mean, if you want you can go back.
+      Volver atras no es una opcion, verdad? Bueno, si quieres puedes volver.
     room: {fileID: 11400000, guid: 2233ef982af5b154b91960f6e9ae3ae8, type: 2}
   items: []

@@ -10,13 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3b4aa43c195ebb24181603c2ae2c69df, type: 3}
-  m_Name: right level
+  m_Name: palanca derecha
   m_EditorClassIdentifier: 
-  itemName: right level
-  description: A level completly marked throught thr sides with arrow, someone want
+  itemName: palanca derecha
+  description: 'A level completly marked throught thr sides with arrow, someone want
     to you to pull it
+
+
+    Una palanca completamente marcada con flecha dibujadas.
+    Alguien realmente queria que quien pase usase esta palanca.'
   interactions:
   - inputAction: {fileID: 11400000, guid: a6a75a392c939e64fbfe4ac9eb7e12b1, type: 2}
     responseDescription: A level completly marked throught the sides with arrows,
       someone want to you to pull it
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: 03643eae92c74094e951dee99aeb948a, type: 2}
+    responseDescription: Una palanca completamente marcada con flecha dibujadas.
+      Alguien realmente queria que quien pase usase esta palanca.
     actionResponse: {fileID: 0}

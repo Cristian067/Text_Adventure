@@ -10,11 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3b4aa43c195ebb24181603c2ae2c69df, type: 3}
-  m_Name: left level
+  m_Name: palanca izquierda
   m_EditorClassIdentifier: 
-  itemName: left level
-  description: A simple level, what did you expect?
+  itemName: palanca izquierda
+  description: 'A simple level, what did you expect?
+
+
+    Una palanca simplemente
+    simple, que esperabas?'
   interactions:
   - inputAction: {fileID: 11400000, guid: a6a75a392c939e64fbfe4ac9eb7e12b1, type: 2}
     responseDescription: A simple level, what did you expect?
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: 03643eae92c74094e951dee99aeb948a, type: 2}
+    responseDescription: Una palanca simplemente simple, que esperabas?
     actionResponse: {fileID: 0}
