@@ -1,10 +1,8 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-
     public static Inventory Instance { get; private set; }
 
     [SerializeField] private List<string> inventory = new List<string>();
@@ -18,20 +16,19 @@ public class Inventory : MonoBehaviour
 
         Instance = this;
     }
-    
+
     public List<string> GetInventory()
     {
         return inventory;
     }
 
-    public bool IsItemInInventory(string itemName)
+    public bool IsItemInInventory(string item)
     {
-        return inventory.Contains(itemName);
+        return inventory.Contains(item);
     }
 
-    public void AddItemToInventory(string itemName)
+    public void AddItemToInventory(string itemToAdd)
     {
-        inventory.Add(itemName);
+        inventory.Add(itemToAdd);
     }
-
 }

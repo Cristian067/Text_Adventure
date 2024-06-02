@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2fa24e56a3d84248a9e1581190d6e1a, type: 3}
+  m_Script: {fileID: 11500000, guid: 79beb7dbca0b048d393ade5b3ee57421, type: 3}
   m_Name: Examinar
   m_EditorClassIdentifier: 
-  keyword: examinar
+  keyWord: examinar

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1443,10 +1443,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1679244837}
-  - component: {fileID: 1679244836}
-  - component: {fileID: 1679244835}
-  - component: {fileID: 1679244838}
+  - component: {fileID: 1679244840}
   - component: {fileID: 1679244839}
+  - component: {fileID: 1679244838}
+  - component: {fileID: 1679244841}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -1454,37 +1454,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1679244835
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1679244834}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b647ba6727bf95b47851b5f4adfa5f4b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentRoom: {fileID: 11400000, guid: 2233ef982af5b154b91960f6e9ae3ae8, type: 2}
---- !u!114 &1679244836
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1679244834}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 389da8cda9475ce47b5d2ab789d263b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  displayText: {fileID: 1825314526}
-  inputActionsArray:
-  - {fileID: 11400000, guid: 7128b33ef3a3ece4f9ce0e99a86f1a85, type: 2}
-  - {fileID: 11400000, guid: a6a75a392c939e64fbfe4ac9eb7e12b1, type: 2}
-  - {fileID: 11400000, guid: a9480f99e34f1a943962ef7c5fe951b6, type: 2}
-  - {fileID: 11400000, guid: 03643eae92c74094e951dee99aeb948a, type: 2}
 --- !u!4 &1679244837
 Transform:
   m_ObjectHideFlags: 0
@@ -1509,10 +1478,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1679244834}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ef7c38ebafbf6e4e84a90e498e4662f, type: 3}
+  m_Script: {fileID: 11500000, guid: 2f8439f9ae5c6402cbfabd50657c519e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputField: {fileID: 416429249}
+  currentRoom: {fileID: 11400000, guid: 00012631898714345b117e99524c7757, type: 2}
 --- !u!114 &1679244839
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1522,10 +1491,43 @@ MonoBehaviour:
   m_GameObject: {fileID: 1679244834}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ed04693c222671408f4f8f9c5c3d33c, type: 3}
+  m_Script: {fileID: 11500000, guid: 8dd547ff3a6424891b0883c7becb1493, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   inventory: []
+--- !u!114 &1679244840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1679244834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eda750222f17a42958ae26ee763a4cd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputField: {fileID: 416429249}
+--- !u!114 &1679244841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1679244834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c961e1eaaa564f35b0f5a15875751ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  displayText: {fileID: 1825314526}
+  inputActionsArray:
+  - {fileID: 11400000, guid: a9480f99e34f1a943962ef7c5fe951b6, type: 2}
+  - {fileID: 11400000, guid: eeedb040dc89fc547bffe6e74f70f972, type: 2}
+  - {fileID: 11400000, guid: 08eabc1e6a99cb141b2a4f1416000e9a, type: 2}
+  - {fileID: 11400000, guid: 03643eae92c74094e951dee99aeb948a, type: 2}
+  - {fileID: 11400000, guid: fa1cf45420ca9fa48a45e95f086c5716, type: 2}
+  - {fileID: 11400000, guid: e90fe4cbed6e94b4f9ca552f467437e2, type: 2}
 --- !u!1 &1729086872
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 932a23ff866244353a14abd5eb22652b, type: 3}
+  m_Name: Espejo
+  m_EditorClassIdentifier: 
+  itemName: espejo
+  description: Puedes notar un espejo bastante suelto en donde deberia estar. Quizas
+    lo suficiente para poder cogerlo?
+  interactions:
+  - inputAction: {fileID: 11400000, guid: 03643eae92c74094e951dee99aeb948a, type: 2}
+    responseDescription: 'Un espejo con un marco de una aleacion de acero y un metal
+      mas que no sabes lo que es. En la parte trasera puedes ller una marca que pone:
+      Sol.'
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: eeedb040dc89fc547bffe6e74f70f972, type: 2}
+    responseDescription: Has cogido el espejo
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: 08eabc1e6a99cb141b2a4f1416000e9a, type: 2}
+    responseDescription: Colocas el espejo en la fuente de luz mirando hacia el oeste
+    actionResponse: {fileID: 11400000, guid: 70c5e061d372e2648afda1305a53ea3b, type: 2}

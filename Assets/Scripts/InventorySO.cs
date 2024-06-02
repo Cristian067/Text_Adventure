@@ -2,17 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InventorySO : MonoBehaviour
+[CreateAssetMenu(menuName = "Scriptable Object/Input Actions/Inventory")]
+public class InventorySO : InputActionSO
 {
-    // Start is called before the first frame update
-    void Start()
+    public override void RespondToInput(string[] separatedInput)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        GameManager.Instance.DisplayInventory();
     }
 }

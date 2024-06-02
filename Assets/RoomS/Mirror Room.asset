@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6d257c47720940e2b41805fd60b1c81, type: 3}
+  m_Name: Mirror Room
+  m_EditorClassIdentifier: 
+  roomName: 
+  description: Estas en una habitacion donde no hay nada mas que espejos, lo cual
+    es muy maniatico, solo puedes verte a ti multiples veces y en casi todas las
+    direcciones, sientes que si te quedas aui muho tiempo te podrias volver loco.
+  exits:
+  - direction: oeste
+    description: En el oeste esta la habitacion amueblada
+    room: {fileID: 11400000, guid: 5c3b9d3dd088c4f4d870e3e8e99234a1, type: 2}
+  - direction: sur
+    description: En el sur hay una especie de armeria
+    room: {fileID: 11400000, guid: 038a589d130f18f4c851dfc03a6aa845, type: 2}
+  items:
+  - {fileID: 11400000, guid: 3fdf5c32f6ed25d46ae7983dfbf0eebd, type: 2}

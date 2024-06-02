@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 932a23ff866244353a14abd5eb22652b, type: 3}
+  m_Name: Cristal Azul
+  m_EditorClassIdentifier: 
+  itemName: cristal
+  description: Ves un cristal en el centro del foco de luz
+  interactions:
+  - inputAction: {fileID: 11400000, guid: 03643eae92c74094e951dee99aeb948a, type: 2}
+    responseDescription: Un cristal de color azul, tiene una forma hexagonal, te
+      preguntas su utilidad, pero tal vez la puedas vender cuando salgas
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: eeedb040dc89fc547bffe6e74f70f972, type: 2}
+    responseDescription: Has cogido el cristal
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: 08eabc1e6a99cb141b2a4f1416000e9a, type: 2}
+    responseDescription: Colocas el cristal en el hueco
+    actionResponse: {fileID: 11400000, guid: 3657bea2c7377da4a9095cae0e037bd2, type: 2}

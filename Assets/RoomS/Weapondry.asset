@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6d257c47720940e2b41805fd60b1c81, type: 3}
+  m_Name: Weapondry
+  m_EditorClassIdentifier: 
+  roomName: armeria
+  description: Estas en una habitacion donde hay un monton de armas casi todas desgastadas
+    y oxidadas, se nota que nadie ha venido aqui en bastante tiempo.
+  exits:
+  - direction: norte
+    description: En el norte hay una habitacion con multiples espejos
+    room: {fileID: 11400000, guid: 55087874895914942afbfa1d8f44d268, type: 2}
+  - direction: este
+    description: Hay una puerta al este, en la puerta hay una marca de un arco
+    room: {fileID: 11400000, guid: 75728c3dd45cf1844ae9f869cb7ebf7c, type: 2}
+  items:
+  - {fileID: 11400000, guid: 96104637aa6c7d44b94463894ee5c2ea, type: 2}

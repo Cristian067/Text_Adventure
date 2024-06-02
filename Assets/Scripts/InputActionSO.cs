@@ -1,10 +1,7 @@
-
 using UnityEngine;
 
 public abstract class InputActionSO : ScriptableObject
 {
-
-    public string keyword;
+    public string keyWord;
     public abstract void RespondToInput(string[] separatedInput);
-
 }
